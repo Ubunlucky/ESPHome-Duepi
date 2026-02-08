@@ -6,8 +6,8 @@ uart:
   rx_pin: 20
   baud_rate: 19200
   debug:
-    direction: RX
-    dummy_receiver: true
+    direction: BOTH
+    dummy_receiver: false
     after:
       timeout: 50ms
       delimiter: "&" 
