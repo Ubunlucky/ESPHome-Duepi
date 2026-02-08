@@ -7,7 +7,7 @@ uart:
   baud_rate: 57600
   debug:
     direction: BOTH
-    dummy_receiver: false
+    dummy_receiver: true
     after:
       timeout: 50ms
       delimiter: "&" 
