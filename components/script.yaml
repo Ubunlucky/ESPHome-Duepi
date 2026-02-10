@@ -14,7 +14,7 @@ script:
               }
               checksum = checksum & 0xFF;
               str=str_sprintf("%X", checksum); 
-              str="\x1b" + command_in + str + "&";
+              str=command_in + str + "&";
               id(debug).publish_state("Custom command: "+str+" send.");  
               std::vector<uint8_t> vec(str.begin(), str.end());
               return vec;
