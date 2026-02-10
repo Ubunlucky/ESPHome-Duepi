@@ -8,7 +8,7 @@ script:
             data: !lambda |-
               std::string str;
               unsigned int checksum = 0;
-              command_in = "R"+command_in;
+              command_in = "R"+command_in+"0";
               for (size_t i = 0; i < command_in.size(); i++) {
                 checksum += static_cast<unsigned char>(command_in[i]);
               }
