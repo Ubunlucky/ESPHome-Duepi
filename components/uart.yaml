@@ -2,11 +2,11 @@
 # 0x00DE & 0x00EA observed as unknown ==> off
 uart:
   id: uart_bus
-  tx_pin: 21
-  rx_pin: 20
+  tx_pin: 1
+  rx_pin: 3
   baud_rate: 115200
   debug:
-    direction: RX
+    direction: BOTH
     dummy_receiver: true
     after:
       timeout: 50ms
